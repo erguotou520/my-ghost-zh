@@ -3,7 +3,7 @@ COPY ./config.js /tmp/config.js
 ENV NODE_ENV production
 RUN \
 	yum update -y \
-	&& yum install wget -y \
+	&& yum install wget unzip -y \
 	&& curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash \
 	&& mkdir ~/ghost-zh \
 	&& cd ~/ghost-zh \
