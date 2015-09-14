@@ -2,8 +2,8 @@ FROM daocloud.io/library/centos:6.6
 COPY ./config.js /tmp/config.js
 ENV NODE_ENV production
 RUN \
-	yum update \
-	&& yum install wget \
+	yum update -y \
+	&& yum install wget -y \
 	&& curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash \
 	&& mkdir ~/ghost-zh \
 	&& cd ~/ghost-zh \
