@@ -10,6 +10,7 @@ RUN \
 	&& wget http://dl.ghostchina.com/Ghost-0.7.0-zh-full.zip \
 	&& unzip Ghost-0.7.0-zh-full.zip -d ~/ghost-zh \
 	&& rm -f Ghost-0.7.0-zh-full.zip \
+	&& . ~/.nvm/nvm.sh \
 	&& nvm install v0.12.7 \
 	&& nvm use v0.12.7 \
 	&& mv /tmp/config.js ~/ghost-zh \
