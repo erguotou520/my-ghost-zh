@@ -8,7 +8,7 @@ RUN \
 	&& mkdir ~/ghost-zh \
 	&& cd ~/ghost-zh \
 	&& wget http://dl.ghostchina.com/Ghost-0.7.0-zh-full.zip \
-	&& unzip Ghost-0.7.0-zh-full.zip -d ~/ghost-zh \
+	&& unzip Ghost-0.7.0-zh-full.zip -q -d ~/ghost-zh \
 	&& rm -f Ghost-0.7.0-zh-full.zip \
 	&& . ~/.nvm/nvm.sh \
 	&& nvm install v0.12.7 \
