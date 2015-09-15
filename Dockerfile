@@ -13,7 +13,7 @@ RUN \
 	&& . ~/.nvm/nvm.sh \
 	&& nvm install v0.12.7 \
 	&& nvm use v0.12.7 \
-	&& mv /tmp/config.js ~/ghost-zh/config.js \
+	&& mv /tmp/config.js ~/ghost-zh/config.js
 CMD node ~/ghost-zh/index.js
 VOLUME ["~/ghost-zh"]
 EXPOSE 80
