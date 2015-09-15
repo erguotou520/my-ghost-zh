@@ -6,10 +6,10 @@
 var path = require('path'),
     config,
     mysql = {
-        host: process.env['3306/tcp'],
-        user: process.env.USERNAME,
-        password: process.env.PASSWORD,
-        database: process.env.INSTANCE_NAME
+        host: process.env.MYSQL_PORT_3306_TCP_ADDR,
+        user: process.env.MYSQL_USERNAME,
+        password: process.env.MYSQL_PASSWORD,
+        database: process.env.MYSQL_INSTANCE_NAME
     };
 
 config = {
@@ -28,7 +28,7 @@ config = {
         },
 
         server: {
-            host: '127.0.0.1',
+            host: '0.0.0.0',
             port: '2368'
         },
 
