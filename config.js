@@ -29,7 +29,7 @@ config = {
 
         server: {
             host: '0.0.0.0',
-            port: '2368'
+            port: '80'
         },
 
         //Storage.Now,we can support `qiniu`,`upyun`, `aliyun oss`, `aliyun ace-storage` and `local-file-store`
