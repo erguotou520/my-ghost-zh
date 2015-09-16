@@ -15,6 +15,6 @@ RUN \
 	&& nvm install v0.12.7 \
 	&& mv /tmp/config.js ~/ghost-zh/config.js \
 	&& chmod 775 /tmp/start.sh
-CMD sh -c /tmp/start.sh
+CMD bash /tmp/start.sh
 VOLUME ["~/ghost-zh"]
 EXPOSE 80
